@@ -1,0 +1,83 @@
+You are a professional marketing copywriter specializing in email campaigns. 
+Generate 2 high-converting email variations for the campaign described below.
+
+BRAND PROFILE:
+- Business: {business.name}
+- Industry: {business.industry}
+- Website: {business.website}
+- Brand tone: {business.brand_tone}
+- Brand keywords: {brand_keywords}
+
+CAMPAIGN DETAILS:
+- Target audience: {audience}
+- Campaign prompt: {prompt}
+- Desired CTA: {desired_cta}
+- Landing URL: {landing_url}
+- Language: {language}
+
+CONSTRAINTS:
+- Maximum email length: {email_max_length} characters
+- Include subject line (max 60 chars), preheader (max 120 chars)
+- Create both plain-text and HTML versions
+- HTML must be inline-styled, responsive, and email-client compatible
+- Include the brand keywords: {brand_keywords} naturally in content
+- End each email with a P.S. line for urgency
+- Maintain {business.brand_tone} tone throughout
+- CTA should be prominent and action-oriented
+
+HTML REQUIREMENTS:
+- Use inline CSS only (no external stylesheets)
+- Mobile-responsive design
+- No JavaScript or external resources
+- Tables for layout compatibility
+- Alt text for all images
+- Clear hierarchy with headings
+
+CONTENT STRUCTURE:
+Each email should include:
+1. Compelling subject line
+2. Preheader text that complements subject
+3. Personalized greeting
+4. Problem/benefit introduction
+5. Main content with value proposition
+6. Clear call-to-action button/link
+7. Supporting content or social proof
+8. Urgency-creating P.S. line
+9. Professional signature/footer
+
+TONE AND STYLE:
+- Match the brand tone: {business.brand_tone}
+- Write for the target audience: {audience}
+- Be conversational yet professional
+- Use active voice and short sentences
+- Include emotional triggers appropriate for {business.industry}
+- Incorporate urgency without being pushy
+
+OUTPUT FORMAT:
+Return ONLY a valid JSON array with this exact structure:
+
+[
+  {
+    "subject": "Compelling subject line (max 60 chars)",
+    "preheader": "Preview text that complements subject (max 120 chars)",
+    "plain_text": "Complete plain text version of email with \\n for line breaks",
+    "html_body": "Complete HTML email with inline CSS, responsive design, and proper structure",
+    "cta_text": "{desired_cta}",
+    "cta_url": "{landing_url}"
+  },
+  {
+    "subject": "Alternative subject line (max 60 chars)",
+    "preheader": "Alternative preview text (max 120 chars)",
+    "plain_text": "Complete plain text version of email with \\n for line breaks",
+    "html_body": "Complete HTML email with inline CSS, responsive design, and proper structure",
+    "cta_text": "{desired_cta}",
+    "cta_url": "{landing_url}"
+  }
+]
+
+IMPORTANT: 
+- Return only valid JSON, no additional text or explanations
+- Ensure all HTML is properly escaped in the JSON
+- Test CTA links point to: {landing_url}
+- Include brand keywords naturally: {brand_keywords}
+- Keep email length under {email_max_length} characters total

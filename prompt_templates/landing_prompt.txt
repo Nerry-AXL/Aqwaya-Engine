@@ -1,0 +1,108 @@
+You are a UX copywriter and landing page conversion expert. 
+Create a high-converting landing page specification for the campaign described below.
+
+BRAND PROFILE:
+- Business: {business.name}
+- Industry: {business.industry}
+- Website: {business.website}
+- Brand tone: {business.brand_tone}
+- Brand keywords: {brand_keywords}
+- Brand colors: {business.brand_colors}
+
+CAMPAIGN DETAILS:
+- Target audience: {audience}
+- Campaign prompt: {prompt}
+- Desired CTA: {desired_cta}
+- Landing URL: {landing_url}
+- Template style: {landing_template}
+- Language: {language}
+
+REQUIREMENTS:
+- Create a complete landing page specification
+- Include compelling headline and subheadline
+- Generate 3 hero image descriptions
+- Create 3 benefit bullets that resonate with {audience}
+- Design 3 main sections: Features, Testimonials, FAQ
+- Include a conversion-optimized form with 2-3 fields
+- Mention brand keywords naturally: {brand_keywords}
+- Maintain {business.brand_tone} tone throughout
+- Optimize for {audience} demographics and psychographics
+
+
+LANDING PAGE STRUCTURE:
+{
+  "hero_images": [
+    { "desc": "Detailed description of first hero image concept" },
+    { "desc": "Detailed description of second hero image concept" },
+    { "desc": "Detailed description of third hero image concept" }
+  ],
+  "bullets": [
+    "First compelling benefit bullet (50-100 chars)",
+    "Second compelling benefit bullet (50-100 chars)",
+    "Third compelling benefit bullet (50-100 chars)"
+  ],
+  "sections": [
+    {
+      "type": "features",
+      "title": "Features Section Title",
+      "content": "Detailed features section content with value proposition and pain point solutions"
+    },
+    {
+      "type": "testimonials",
+      "title": "Social Proof Section Title",
+      "content": "Framework for testimonials section with credibility indicators and social proof"
+    },
+    {
+      "type": "faq",
+      "title": "FAQ Section Title",
+      "content": "FAQ section content addressing common objections and building trust"
+    }
+  ],
+  "form_fields": [
+    {
+      "name": "email",
+      "type": "email",
+      "label": "Email Address",
+      "placeholder": "Enter your email",
+      "required": true
+    },
+    {
+      "name": "first_name",
+      "type": "text",
+      "label": "First Name",
+      "placeholder": "Your first name",
+      "required": true
+    }
+  ],
+  "html_template": "Complete HTML template with inline CSS, responsive design, and conversion optimization. Include placeholder sections for all elements above.",
+  "cta_text": "{desired_cta}",
+  "cta_url": "{landing_url}"
+}
+
+HTML TEMPLATE REQUIREMENTS:
+- Fully responsive HTML5 structure
+- Inline CSS for email compatibility
+- Conversion-optimized layout
+- Mobile-first design approach
+- Fast loading and accessible
+- Include all sections defined above
+- Professional {landing_template} styling
+- Trust indicators and security elements
+- Clear call-to-action placement
+
+CONVERSION OPTIMIZATION:
+- Above-the-fold CTA placement
+- Benefit-focused headlines
+- Social proof integration
+- Mobile optimization
+- Fast loading times
+- Clear value proposition
+- Minimal form friction
+- Trust signals throughout
+
+IMPORTANT:
+- Return only valid JSON, no additional text
+- Include brand keywords naturally: {brand_keywords}
+- Optimize for target audience: {audience}
+- Maintain brand tone: {business.brand_tone}
+- All content should drive toward: {desired_cta}
